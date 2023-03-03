@@ -9,7 +9,7 @@ class Pengaduan extends Model
 {
     use HasFactory;
 
-    protected $table = 'pegaduan';
+    protected $table = 'pengaduan';
 
     protected $primaryKey = 'id_pengaduan';
 
@@ -17,6 +17,13 @@ class Pengaduan extends Model
         'tgl_pengaduan',
         'nik',
         'isi_laporan',
-        'status', 
+        'status',
     ];
+
+    protected $dates = ['tgl_pengaduan'];
+
+    public function user()
+    {
+        return $this->hasOne(Masyarakat::class, 'nik','nik');
+    }
 }
