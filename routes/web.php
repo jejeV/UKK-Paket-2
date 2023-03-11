@@ -34,6 +34,20 @@ Route::get('/laporan/{siapa?}', [UserController::class, 'laporan'])->name('lapor
 
 Route::get('/logout', [UserController::class, 'logout'])->name('lapor.logout');
 
-Route::get('/admin', function () {
-    return view('admin.login');
+Route::prefix('admin')->group(function (){
+    Route::get('/', [AdminController::class, 'formLogin'])->name('admin.formLogin');
+    Route::post('/login', [AdminController::class, 'login'])->name('admin.login');
+    Route::get('/logout', [AdminController::class, 'logout'])->name('admin.logout');
+
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+
+    Route::resource('pengaduan', PengaduanController::class);
+    Route::resource('petugas', PetugasController::class);
+    Route::resource('masyarakat', MasyarakatController::class);
+    Route::get('laporan', [LaporanController::class, 'index'])->name('laporan.index');
+
+    Route::post('tanggapan/createOrUpdate', [TanggapanController::class, 'createOrUpdate'])->name('tanggapan.createOrUpdate');
 });
+
+Route::view('/hh', 'Admin.hhh');
+

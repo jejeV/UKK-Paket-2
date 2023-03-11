@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('dist/css/landing.css') }}">
 @endsection
 
-@section('title', 'PEKAT - Pengaduan Masyarakat')
+@section('title', 'LaporinAje')
 
 @section('content')
 {{-- Section Header --}}
@@ -13,7 +13,7 @@
         <div class="container">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <h4 class="semi-bold mb-0 text-white">Lapor</h4>
+                    <h4 class="semi-bold mb-0 text-white">LaporAje</h4>
                     <p class="italic mt-0 text-white">Pengaduan Masyarakat</p>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -52,10 +52,6 @@
         <p class="italic text-white mb-5">Sampaikan laporan Anda langsung kepada yang pemerintah berwenang</p>
     </div>
 
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-    <div class="wave wave4"></div>
 </section>
 {{-- Section Card Pengaduan --}}
 <div class="row justify-content-center">
