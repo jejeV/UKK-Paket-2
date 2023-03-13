@@ -12,7 +12,7 @@
             <div class="col-span-12 mt-6">
                 <div class="intro-y block sm:flex items-center h-10">
                     <h2 class="text-lg font-medium truncate mr-5">
-                        Weekly Top Products
+                        Data Pengaduan
                     </h2>
                     <div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
                         <button class="btn box flex items-center text-slate-600 dark:text-slate-300"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to Excel </button>
@@ -42,15 +42,15 @@
                                 <td class="text-center">{{ $v->isi_laporan }}</td>
                                 <td class="text-center">
                                     @if( $v->status == '0' )
-                                        <a href="#" class="text-danger">Pending</a>
+                                        <a href="#" class="btn btn-rounded btn-pending-soft w-24 mr-1 mb-2">Pending</a>
                                     @elseif( $v->status == 'proses' )
-                                        <a href="#" class="text-warning text-white">Proses</a>
+                                        <a href="#" class="btn btn-rounded btn-dark-soft w-24 mr-1 mb-2">Proses</a>
                                     @else
-                                        <a href="#" class="text-success">Selesai</a>
+                                        <a href="#" class="btn btn-rounded btn-success-soft w-24 mr-1 mb-2">Selesai</a>
                                     @endif
                                 </td>
                                 <td class="text-center">
-                                    <a href="{{ route('pengaduan.show', $v->id_pengaduan) }}" style="text-decoration: underline">Show</a>
+                                    <a href="{{ route('pengaduan.show', $v->id_pengaduan) }}" class="btn btn-warning w-24 inline-block mr-1 mb-2 text-white">Show</a>
                                 </td>
                                 {{-- <td class="table-report__action w-56">
                                     <div class="flex justify-center items-center">
@@ -73,8 +73,8 @@
                                 <a class="page-link" href="#"> <i class="w-4 h-4" data-feather="chevron-left"></i> </a>
                             </li>
                             <li class="page-item"> <a class="page-link" href="#">...</a> </li>
-                            <li class="page-item"> <a class="page-link" href="#">1</a> </li>
-                            <li class="page-item active"> <a class="page-link" href="#">2</a> </li>
+                            <li class="page-item active"> <a class="page-link" href="#">1</a> </li>
+                            <li class="page-item"> <a class="page-link" href="#">2</a> </li>
                             <li class="page-item"> <a class="page-link" href="#">3</a> </li>
                             <li class="page-item"> <a class="page-link" href="#">...</a> </li>
                             <li class="page-item">

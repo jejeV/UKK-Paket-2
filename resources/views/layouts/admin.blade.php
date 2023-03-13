@@ -1235,13 +1235,13 @@
                     <!-- BEGIN: Account Menu -->
                     <div class="intro-x dropdown w-8 h-8">
                         <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button" aria-expanded="false" data-tw-toggle="dropdown">
-                            <img alt="Rubick Tailwind HTML Admin Template" src="/dist/images/profile-8.jpg">
+                            <img alt="Rubick Tailwind HTML Admin Template" src="/dist/images/naruto.jpeg">
                         </div>
                         <div class="dropdown-menu w-56">
                             <ul class="dropdown-content bg-primary text-white">
                                 <li class="p-2">
                                     <div class="font-medium">{{ Auth::guard('admin')->user()->nama_petugas }}</div>
-                                    <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Frontend Engineer</div>
+                                    <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Ninja</div>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider border-white/[0.08]">

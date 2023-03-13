@@ -9,8 +9,8 @@
 @endsection
 
 @section('content')
-<div class="col-lg-6 col-12">
-    <div class="intro-y box mt-5">
+<div class="grid grid-cols-12 gap-6 mt-4">
+    <div class="intro-y box col-span-12 lg:col-span-6">
         <div class="flex flex-col sm:flex-row items-center p-5 border-b border-slate-200/60">
             <h2 class="font-medium text-base mr-auto">Pengaduan Masyarakat</h2>
         </div>
@@ -53,10 +53,7 @@
             </div>
         </div>
     </div>
-</div>
-
-<div class="col-lg-6 col-12">
-    <div class="intro-y box mt-5">
+    <div class="intro-y box col-span-12 lg:col-span-6">
         <div class="flex flex-col sm:flex-row items-center p-5 border-b border-slate-200/60">
             <h2 class="font-medium text-base mr-auto">Tanggapan Petugas</h2>
         </div>
@@ -97,4 +94,5 @@
             @endif
         </div>
     </div>
+</div>
 @endsection
